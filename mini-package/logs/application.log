@@ -264,3 +264,155 @@ java.lang.NullPointerException: null
 2019-10-24 10:34:01.092 DEBUG 83048 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
 2019-10-24 10:34:01.102 DEBUG 83048 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.minipackage.minipackage.Entity.Packages@72fa0199]
 2019-10-24 10:34:01.113 DEBUG 83048 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-10-24 11:37:59.164  INFO 82992 --- [main] c.m.minipackage.MiniPackageApplication   : Starting MiniPackageApplication on ITAMNL24-W10 with PID 82992 (D:\ECHONMI\React\Day14_Comprehensive_exercise_mini_package\mini-package\out\production\classes started by ECHONMI in D:\ECHONMI\React\Day14_Comprehensive_exercise_mini_package\mini-package)
+2019-10-24 11:37:59.164  INFO 82992 --- [main] c.m.minipackage.MiniPackageApplication   : No active profile set, falling back to default profiles: default
+2019-10-24 11:37:59.942  INFO 82992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-24 11:38:00.005  INFO 82992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 1 repository interfaces.
+2019-10-24 11:38:00.371  INFO 82992 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-24 11:38:00.805  INFO 82992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-10-24 11:38:00.815  INFO 82992 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-24 11:38:00.815  INFO 82992 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-24 11:38:00.923  INFO 82992 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-24 11:38:00.923 DEBUG 82992 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-10-24 11:38:00.923  INFO 82992 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1692 ms
+2019-10-24 11:38:01.072  INFO 82992 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-24 11:38:01.354  INFO 82992 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-24 11:38:01.354  INFO 82992 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./target/bookings'
+2019-10-24 11:38:01.559  INFO 82992 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-10-24 11:38:01.643  INFO 82992 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-10-24 11:38:01.828  INFO 82992 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-10-24 11:38:01.967  INFO 82992 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-10-24 11:38:02.774  INFO 82992 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-10-24 11:38:02.789  INFO 82992 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-24 11:38:03.040  WARN 82992 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-24 11:38:03.103 DEBUG 82992 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2019-10-24 11:38:03.166 DEBUG 82992 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-24 11:38:03.199 DEBUG 82992 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-24 11:38:03.380  INFO 82992 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-24 11:38:03.436  INFO 82992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-10-24 11:38:03.437  INFO 82992 --- [main] c.m.minipackage.MiniPackageApplication   : Started MiniPackageApplication in 4.995 seconds (JVM running for 5.538)
+2019-10-24 11:43:57.963  INFO 82992 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-24 11:43:57.963  INFO 82992 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-24 11:43:57.963 DEBUG 82992 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-10-24 11:43:57.963 DEBUG 82992 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-10-24 11:43:57.963  INFO 82992 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2019-10-24 11:43:57.978 DEBUG 82992 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/bookings", parameters={}
+2019-10-24 11:43:57.978 DEBUG 82992 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.minipackage.minipackage.Controller.BookingController#createPackage(Packages)
+2019-10-24 11:43:58.047 DEBUG 82992 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-10-24 11:43:58.047 DEBUG 82992 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/bookings", parameters={}
+2019-10-24 11:43:58.047 DEBUG 82992 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.minipackage.minipackage.Controller.BookingController#createPackage(Packages)
+2019-10-24 11:43:58.188 DEBUG 82992 --- [http-nio-8081-exec-2] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [0] in public com.minipackage.minipackage.Entity.Packages com.minipackage.minipackage.Controller.BookingController.createPackage(com.minipackage.minipackage.Entity.Packages): JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "a": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "a": not a valid Integer value
+ at [Source: (PushbackInputStream); line: 1, column: 11] (through reference chain: com.minipackage.minipackage.Entity.Packages["weight"])
+2019-10-24 11:43:58.190  WARN 82992 --- [http-nio-8081-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "a": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "a": not a valid Integer value
+ at [Source: (PushbackInputStream); line: 1, column: 11] (through reference chain: com.minipackage.minipackage.Entity.Packages["weight"])]
+2019-10-24 11:43:58.191 DEBUG 82992 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2019-10-24 11:43:58.194 DEBUG 82992 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2019-10-24 11:43:58.195 DEBUG 82992 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2019-10-24 11:43:58.204 DEBUG 82992 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-10-24 11:43:58.205 DEBUG 82992 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Oct 24 11:43:58 CST 2019, status=400, error=Bad Request, message=JSON parse error: Ca (truncated)...]
+2019-10-24 11:43:58.219 DEBUG 82992 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2019-10-24 11:44:52.201 DEBUG 82992 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/bookings", parameters={}
+2019-10-24 11:44:52.204 DEBUG 82992 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.minipackage.minipackage.Controller.BookingController#createPackage(Packages)
+2019-10-24 11:44:52.208 DEBUG 82992 --- [http-nio-8081-exec-3] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [0] in public com.minipackage.minipackage.Entity.Packages com.minipackage.minipackage.Controller.BookingController.createPackage(com.minipackage.minipackage.Entity.Packages): JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "a": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "a": not a valid Integer value
+ at [Source: (PushbackInputStream); line: 1, column: 11] (through reference chain: com.minipackage.minipackage.Entity.Packages["weight"])
+2019-10-24 11:44:52.209  WARN 82992 --- [http-nio-8081-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "a": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "a": not a valid Integer value
+ at [Source: (PushbackInputStream); line: 1, column: 11] (through reference chain: com.minipackage.minipackage.Entity.Packages["weight"])]
+2019-10-24 11:44:52.209 DEBUG 82992 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2019-10-24 11:44:52.210 DEBUG 82992 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2019-10-24 11:44:52.211 DEBUG 82992 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2019-10-24 11:44:52.211 DEBUG 82992 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-10-24 11:44:52.212 DEBUG 82992 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Oct 24 11:44:52 CST 2019, status=400, error=Bad Request, message=JSON parse error: Ca (truncated)...]
+2019-10-24 11:44:52.212 DEBUG 82992 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2019-10-24 11:45:38.204 DEBUG 82992 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/bookings", parameters={}
+2019-10-24 11:45:38.205 DEBUG 82992 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.minipackage.minipackage.Controller.BookingController#createPackage(Packages)
+2019-10-24 11:45:38.206 DEBUG 82992 --- [http-nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.minipackage.minipackage.Entity.Packages@22a972d3]
+2019-10-24 11:45:38.298 DEBUG 82992 --- [http-nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-24 11:45:38.303 DEBUG 82992 --- [http-nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.minipackage.minipackage.Entity.Packages@22a972d3]
+2019-10-24 11:45:38.305 DEBUG 82992 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-10-24 11:59:11.585  INFO 64380 --- [main] c.m.m.Controller.BookingControllerTest   : Starting BookingControllerTest on ITAMNL24-W10 with PID 64380 (started by ECHONMI in D:\ECHONMI\React\Day14_Comprehensive_exercise_mini_package\mini-package)
+2019-10-24 11:59:11.585  INFO 64380 --- [main] c.m.m.Controller.BookingControllerTest   : The following profiles are active: Test
+2019-10-24 11:59:11.601 DEBUG 64380 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@15b986cd
+2019-10-24 11:59:12.903 DEBUG 64380 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2019-10-24 11:59:13.135 DEBUG 64380 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-24 11:59:13.226 DEBUG 64380 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-24 11:59:13.336  INFO 64380 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-24 11:59:13.336  INFO 64380 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-24 11:59:13.351  INFO 64380 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 15 ms
+2019-10-24 11:59:13.389  INFO 64380 --- [main] c.m.m.Controller.BookingControllerTest   : Started BookingControllerTest in 2.246 seconds (JVM running for 3.705)
+2019-10-24 11:59:13.552 DEBUG 64380 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.minipackage.minipackage.Controller.BookingController#createPackage(PackageInformation)
+2019-10-24 11:59:13.605 DEBUG 64380 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json" to [com.minipackage.minipackage.Dto.PackageInformation@34009349]
+2019-10-24 11:59:16.288 DEBUG 64380 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@15b986cd, started on Thu Oct 24 11:59:11 CST 2019
+2019-10-24 12:06:29.800 DEBUG 82992 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/bookings", parameters={}
+2019-10-24 12:06:29.800 DEBUG 82992 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.minipackage.minipackage.Controller.BookingController#createPackage(Packages)
+2019-10-24 12:06:29.800 DEBUG 82992 --- [http-nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.minipackage.minipackage.Entity.Packages@62caa0e7]
+2019-10-24 12:06:29.816 DEBUG 82992 --- [http-nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-24 12:06:29.816 DEBUG 82992 --- [http-nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.minipackage.minipackage.Entity.Packages@5eb4643d]
+2019-10-24 12:06:29.816 DEBUG 82992 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2019-10-24 12:16:32.901  INFO 96416 --- [main] c.m.minipackage.MiniPackageApplication   : Starting MiniPackageApplication on ITAMNL24-W10 with PID 96416 (D:\ECHONMI\React\Day14_Comprehensive_exercise_mini_package\mini-package\out\production\classes started by ECHONMI in D:\ECHONMI\React\Day14_Comprehensive_exercise_mini_package\mini-package)
+2019-10-24 12:16:32.901  INFO 96416 --- [main] c.m.minipackage.MiniPackageApplication   : No active profile set, falling back to default profiles: default
+2019-10-24 12:16:33.705  INFO 96416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-24 12:16:33.765  INFO 96416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66ms. Found 2 repository interfaces.
+2019-10-24 12:16:34.036  INFO 96416 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-24 12:16:34.414  INFO 96416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-10-24 12:16:34.430  INFO 96416 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-24 12:16:34.430  INFO 96416 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-24 12:16:34.530  INFO 96416 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-24 12:16:34.530 DEBUG 96416 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-10-24 12:16:34.530  INFO 96416 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1571 ms
+2019-10-24 12:16:34.674  INFO 96416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-24 12:16:34.862  INFO 96416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-24 12:16:34.868  INFO 96416 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./target/bookings'
+2019-10-24 12:16:35.046  INFO 96416 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-10-24 12:16:35.115  INFO 96416 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-10-24 12:16:35.249  INFO 96416 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-10-24 12:16:35.352  INFO 96416 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-10-24 12:16:36.087  INFO 96416 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-10-24 12:16:36.087  INFO 96416 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-24 12:16:36.322  WARN 96416 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-24 12:16:36.388 DEBUG 96416 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2019-10-24 12:16:36.434 DEBUG 96416 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-24 12:16:36.472 DEBUG 96416 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-24 12:16:36.604  INFO 96416 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-24 12:16:36.733  INFO 96416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-10-24 12:16:36.749  INFO 96416 --- [main] c.m.minipackage.MiniPackageApplication   : Started MiniPackageApplication in 4.349 seconds (JVM running for 4.834)
+2019-10-24 12:18:04.059  INFO 78664 --- [main] c.m.minipackage.MiniPackageApplication   : Starting MiniPackageApplication on ITAMNL24-W10 with PID 78664 (D:\ECHONMI\React\Day14_Comprehensive_exercise_mini_package\mini-package\out\production\classes started by ECHONMI in D:\ECHONMI\React\Day14_Comprehensive_exercise_mini_package\mini-package)
+2019-10-24 12:18:04.059  INFO 78664 --- [main] c.m.minipackage.MiniPackageApplication   : No active profile set, falling back to default profiles: default
+2019-10-24 12:18:05.015  INFO 78664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-24 12:18:05.077  INFO 78664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60ms. Found 2 repository interfaces.
+2019-10-24 12:18:05.368  INFO 78664 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-24 12:18:05.910  INFO 78664 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-10-24 12:18:05.948  INFO 78664 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-24 12:18:05.948  INFO 78664 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-24 12:18:06.062  INFO 78664 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-24 12:18:06.062 DEBUG 78664 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-10-24 12:18:06.062  INFO 78664 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1949 ms
+2019-10-24 12:18:06.189  INFO 78664 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-24 12:18:06.465  INFO 78664 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-24 12:18:06.480  INFO 78664 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./target/bookings'
+2019-10-24 12:18:06.721  INFO 78664 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-10-24 12:18:06.781  INFO 78664 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-10-24 12:18:06.919  INFO 78664 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-10-24 12:18:07.019  INFO 78664 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-10-24 12:18:07.742  INFO 78664 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-10-24 12:18:07.747  INFO 78664 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-24 12:18:08.022  WARN 78664 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-24 12:18:08.084 DEBUG 78664 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2019-10-24 12:18:08.192 DEBUG 78664 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-24 12:18:08.227 DEBUG 78664 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-24 12:18:08.458  INFO 78664 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-24 12:18:08.641  INFO 78664 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-10-24 12:18:08.649  INFO 78664 --- [main] c.m.minipackage.MiniPackageApplication   : Started MiniPackageApplication in 15.067 seconds (JVM running for 15.547)
+2019-10-24 12:19:40.231  INFO 78664 --- [http-nio-8081-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-24 12:19:40.232  INFO 78664 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-24 12:19:40.232 DEBUG 78664 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-10-24 12:19:40.250 DEBUG 78664 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-10-24 12:19:40.250  INFO 78664 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2019-10-24 12:19:40.250 DEBUG 78664 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : OPTIONS "/bookings", parameters={}
+2019-10-24 12:19:40.270 DEBUG 78664 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.minipackage.minipackage.Controller.BookingController#createPackage(PackageInformation)
+2019-10-24 12:19:40.296 DEBUG 78664 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-10-24 12:19:40.370 DEBUG 78664 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/bookings", parameters={}
+2019-10-24 12:19:40.370 DEBUG 78664 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.minipackage.minipackage.Controller.BookingController#createPackage(PackageInformation)
+2019-10-24 12:19:40.417 DEBUG 78664 --- [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.minipackage.minipackage.Dto.PackageInformation@6541f06b]
+2019-10-24 12:19:40.502 DEBUG 78664 --- [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-24 12:19:40.502 DEBUG 78664 --- [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.minipackage.minipackage.Dto.PackageInformation@6541f06b]
+2019-10-24 12:19:40.517 DEBUG 78664 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED

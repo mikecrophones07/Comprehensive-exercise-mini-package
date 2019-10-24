@@ -1,6 +1,7 @@
 package com.minipackage.minipackage.Controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.minipackage.minipackage.Dto.PackageInformation;
 import com.minipackage.minipackage.Entity.Packages;
 import com.minipackage.minipackage.Service.BookingService;
 import org.junit.jupiter.api.Test;
@@ -34,12 +35,12 @@ public class BookingControllerTest {
 
     @Test
     void should_return_ok_when_create_package() throws Exception {
-        Packages packages = new Packages();
-        when(bookingService.add(packages)).thenReturn(packages);
+        PackageInformation packagesInfo = new PackageInformation();
+        when(bookingService.add(packagesInfo)).thenReturn(packagesInfo);
 
         ResultActions result = mvc.perform(post("/bookings")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(objectMapper.writeValueAsString(packages)));
+                .content(objectMapper.writeValueAsString(packagesInfo)));
         result.andExpect(status().isCreated());
     }
 }

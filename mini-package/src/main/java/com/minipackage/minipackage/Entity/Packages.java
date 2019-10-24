@@ -8,12 +8,19 @@ public class Packages {
     @Id
     @Column(unique = true)
     @NotNull
-    @GeneratedValue(strategy= GenerationType.AUTO)
     Long packageNumber;
 
     Integer weight;
     String status;
     String bookingTime;
+
+    @JoinColumn(name = "receiver_id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    ReceiverInfo receiverInfo;
+
+    public void setReceiverInfo(ReceiverInfo receiverInfo) {
+        this.receiverInfo = receiverInfo;
+    }
 
     public Long getPackageNumber() {
         return packageNumber;

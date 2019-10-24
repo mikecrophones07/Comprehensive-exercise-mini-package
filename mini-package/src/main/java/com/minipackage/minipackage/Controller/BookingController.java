@@ -1,5 +1,6 @@
 package com.minipackage.minipackage.Controller;
 
+import com.minipackage.minipackage.Dto.PackageInformation;
 import com.minipackage.minipackage.Entity.Packages;
 import com.minipackage.minipackage.Service.BookingService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,7 @@ public class BookingController {
 
     @PostMapping(produces = {"application/json"})
     @ResponseStatus(value = HttpStatus.CREATED)
-    public Packages createBooking(@RequestBody Packages packages){
-        return bookingService.add(packages);
+    public PackageInformation createPackage(@RequestBody PackageInformation packageInformation){
+        return bookingService.add(packageInformation);
     }
 }
